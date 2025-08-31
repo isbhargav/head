@@ -1,12 +1,12 @@
 ---
-title: Product 09
-date: 2023-08-26T11:02:25+02:00
+title: Note 08
+date: 2023-07-25T11:02:25+02:00
 tags:
   - dolor
-  - labore
+  - sed
 categories:
   - consectetur
-  - eiusmod
+  - aliqua
 
 ---
 

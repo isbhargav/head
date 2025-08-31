@@ -1,0 +1,2 @@
+[tools]
+"ubi:gohugoio/hugo" = { version = "latest", matching = "extended_withdeploy" }

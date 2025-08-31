@@ -1,6 +1,6 @@
 ---
-title: "Zen demo site"
-baseURL: "https://zen-demo.xdeb.org/"
+title: "Byte Garden"
+baseURL: "https://byte-garden.xdeb.org/"
 theme: "github.com/frjo/hugo-theme-zen/v5"
 copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
 languageCode: "en-GB"
@@ -21,6 +21,8 @@ markup:
       unsafe: true
   highlight:
     style: github
+  scss:
+    implementation: dartsass
 
 outputFormats:
   SearchIndex:
@@ -38,13 +40,15 @@ params:
     name: "Fredrik Jonsson"
     url: "https://xdeb.org"
   contact: "frjo@xdeb.org"
-  description: "The zen theme for Hugo demo site."
-  dateformat: "2 January, 2006"
-  favicon: "apple-touch-icon.png"
+  description: "A digital garden of code, thoughts, and creativity."
+  dateformat: "2006-01-02"
+  favicon: "favicon.ico"
   feedlinks: true
-  icon: "apple-touch-icon.png"
-  image: "apple-touch-icon.png"
+  icon: "ms-icon.png"
+  image: "ms-icon.png"
   imageMaxWidth: 400
+  logo: "logo.png"
+  logoPath: "logo.png"
   logoWidth: 64
   logoHeight: 64
   mainSections:
@@ -69,12 +73,9 @@ languages:
         - Name: "Blog"
           weight: 2
           pageRef: "/blog/"
-        - Name: "Podcast"
-          weight: 4
-          pageRef: "/podcast/"
-        - Name: "Products"
+        - Name: "Notes"
           weight: 6
-          pageRef: "/products/"
+          pageRef: "/notes/"
         - Name: "Misc"
           weight: 8
           pageRef: "/misc/"
@@ -85,14 +86,5 @@ languages:
           weight: 12
           pageRef: "/contact/"
 
-  sv:
-    weight: 2
-    languageName: "Svenska"
-    languageCode: "sv-SE"
-    contentDir: content/sv
-    menu:
-      main:
-        - Name: "Hem"
-          weight: -10
-          pageRef: "/"
+
 

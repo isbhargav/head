@@ -1,12 +1,12 @@
 ---
-title: Product 03
-date: 2023-08-17T11:02:25+02:00
+title: Note 04
+date: 2023-09-18T11:02:25+02:00
 tags:
   - dolor
   - sed
 categories:
-  - consectetur
-  - aliqua
+  - magna
+  - eiusmod
 
 ---
 

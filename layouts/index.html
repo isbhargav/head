@@ -1,0 +1,14 @@
+{{ define "main" -}}
+<main class="main layout__main">
+    <header>
+        <h1 class="title">{{ .Title }}</h1>
+    </header>
+
+    {{ with .Content -}}
+    <div class="content">
+        {{ . }}
+    </div>
+    {{ end -}}
+
+</main>
+{{ end -}}

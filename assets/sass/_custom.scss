@@ -1,0 +1,38 @@
+// Override font variables to use Dank Mono
+:root {
+  --font: '-apple-system', 'BlinkMacSystemFont', 'Inter', 'IBM Plex Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  --font-mono: 'ui-monospace', 'SFMono-Regular', "Cascadia Code", "IBM Plex Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --ff-body: var(--font-mono);
+}
+
+// Paper-like color scheme
+:root {
+  // Warm, off-white backgrounds reminiscent of paper
+  --color-body-bg: oklch(98% 0.005 45); // Warm off-white for main content
+  --color-backdrop: oklch(96% 0.008 50); // Slightly warmer page backdrop
+  --color-header-bg: oklch(97% 0.006 48); // Warm header background
+  --color-footer-bg: oklch(97% 0.006 48); // Warm footer background
+  --color-text-bg: oklch(99% 0.002 40); // Very light warm background for text areas
+
+  // Subtle paper texture effect
+  --paper-texture: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+}
+
+// Apply paper texture to main content areas
+.page {
+  background-image: var(--paper-texture);
+  background-size: 150px 150px;
+}
+
+// Improve zebra table contrast
+:root {
+  --color-row-odd: oklch(94% 0.01 45);
+}
+
+.layout__main {
+  background-image: var(--paper-texture);
+  background-size: 150px 150px;
+}

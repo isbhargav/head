@@ -1,4 +1,4 @@
-module github.com/frjo/zen-demo
+module github.com/frjo/byte-garden
 
 go 1.24
 

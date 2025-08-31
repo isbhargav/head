@@ -1,6 +1,6 @@
 ---
-title: Product 06
-date: 2023-09-20T11:02:25+02:00
+title: Note 12
+date: 2023-09-29T11:02:25+02:00
 tags:
   - dolor
   - sed

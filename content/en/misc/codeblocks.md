@@ -8,8 +8,8 @@ summary: Examples of copy button on codeblocks.
 ## Copy code button on codeblocks
 
 ``` yaml
-title: "Zen demo site"
-baseURL: "https://zen-demo.xdeb.org/"
+title: "Byte Garden"
+baseURL: "https://byte-garden.xdeb.org/"
 theme: "github.com/frjo/hugo-theme-zen/v5"
 copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
 languageCode: "en-GB"
@@ -46,4 +46,28 @@ markup:
 {{ $result.Wrapped }}
 {{ end -}}
 </div>
+```
+
+```python
+import os
+
+def main():
+    print("Hello, World!")
+    os.system("echo Hello, World!") # This is a comment
+
+```
+
+```typescript
+import { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+}
 ```

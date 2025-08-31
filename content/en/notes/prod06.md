@@ -1,9 +1,9 @@
 ---
-title: Product 07
-date: 2023-09-24T11:02:25+02:00
+title: Note 06
+date: 2023-09-20T11:02:25+02:00
 tags:
   - dolor
-  - tempor
+  - sed
 categories:
   - consectetur
   - eiusmod

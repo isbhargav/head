@@ -2,9 +2,9 @@
 $font-size: $font-size-fluid;
 
 // The max content width. (Consider using one of the breakpoints.)
-$max-content-width:   777px;
+$max-content-width: 1000px;
 
 // The max page width. Defaults to max-content-width.
 // Setting this to a larger value than max-content-width allows
 // content with class "stretch" to stretch out to the page edge.
-$max-page-width:      1111px;
+$max-page-width: 1400px;

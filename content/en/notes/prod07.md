@@ -1,6 +1,6 @@
 ---
-title: Product 02
-date: 2023-09-02T11:02:25+02:00
+title: Note 07
+date: 2023-09-24T11:02:25+02:00
 tags:
   - dolor
   - tempor
