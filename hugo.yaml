@@ -1,6 +1,6 @@
 ---
 title: "Byte Garden"
-baseURL: "https://byte-garden.xdeb.org/"
+baseURL: "https://isbhargav.github.io/head/"
 theme: "github.com/frjo/hugo-theme-zen/v5"
 copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
 languageCode: "en-GB"
@@ -37,10 +37,10 @@ outputs:
 
 params:
   author:
-    name: "Fredrik Jonsson"
-    url: "https://xdeb.org"
-  contact: "frjo@xdeb.org"
-  description: "A digital garden of code, thoughts, and creativity."
+    name: "Bhargav Lad"
+    url: "https://ladb.dev"
+  contact: "hello@ladb.dev"
+  description: "Notes, TILs, and write-ups on software, tools, and systems — Bhargav Lad's digital garden."
   dateformat: "2006-01-02"
   favicon: "favicon.ico"
   feedlinks: true

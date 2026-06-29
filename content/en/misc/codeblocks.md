@@ -9,7 +9,7 @@ summary: Examples of copy button on codeblocks.
 
 ``` yaml
 title: "Byte Garden"
-baseURL: "https://byte-garden.xdeb.org/"
+baseURL: "https://isbhargav.github.io/head/"
 theme: "github.com/frjo/hugo-theme-zen/v5"
 copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
 languageCode: "en-GB"

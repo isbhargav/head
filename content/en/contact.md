@@ -4,8 +4,7 @@ submitted: false
 
 ---
 
-This contact form is NOT active.
+Want to reach me? The quickest way is email at [hello@ladb.dev](mailto:hello@ladb.dev),
+or find me on [GitHub](https://github.com/isbhargav) and [X](https://twitter.com/bhargavlad).
 
-Nothing will happen if you submit it since there is no backend script setup. The Zen theme comes with a sample PHP backend.
-
-{{< contact >}}
+You can also head back to my [main site](https://ladb.dev).

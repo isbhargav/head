@@ -1,7 +1,8 @@
 ---
-title: Blog section
+title: Blog
 weight: 1
 
 ---
 
-A standard section that in this instance is a blog.
+Longer write-ups — deep dives, project notes, and posts on things I've been
+building or figuring out.

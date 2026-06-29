@@ -4,17 +4,15 @@ date: 2022-08-03T20:48:20+02:00
 
 ---
 
-This is a digital garden built with the [Hugo zen theme](https://github.com/frjo/hugo-theme-zen) (GitHub).
+Welcome to my **Byte Garden** — a digital garden where I plant notes, TILs
+(today-I-learned), and longer write-ups as I learn.
 
-Source code for [Byte Garden](https://github.com/frjo/byte-garden) (GitHub).
+It's a low-pressure, always-growing place for the things I want to keep in my
+head: snippets, debugging lessons, tool configs, and ideas worth remembering.
+Some entries are polished, many are rough and still growing.
 
-This is the theme I have built to have a good base for all my own Hugo projects. I normally extend it during new projects when I come up with fixes and solutions that I think will be generally useful.
+- **[Blog](/blog/)** — longer write-ups and posts.
+- **[Notes](/notes/)** — short, tweet-sized notes and TILs.
+- **[Search](/search/)** — find anything across the garden.
 
-I am happy to see that other people also have found it useful.
-
-## Styles
-
-What you see here is the base reset CSS plus the Zen styles. I fully expect most users of this theme will remove the Zen styles. They are a set of styles I happen to often use in my own projects.
-
-To make this theme look like anything you need to add your own custom styling to it. It is a **base** theme after all.
-
+Built by [Bhargav Lad](https://ladb.dev). Wander around and dig in.
