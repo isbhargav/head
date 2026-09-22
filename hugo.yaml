@@ -1,9 +1,9 @@
 ---
 title: "Byte Garden"
 baseURL: "https://isbhargav.github.io/head/"
-theme: "github.com/frjo/hugo-theme-zen/v5"
+theme: "github.com/frjo/hugo-theme-zen/v7"
 copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
-languageCode: "en-GB"
+locale: "en-GB"
 defaultContentLanguage: "en"
 pluralizelisttitles: false
 removePathAccents: true
@@ -21,8 +21,6 @@ markup:
       unsafe: true
   highlight:
     style: github
-  scss:
-    implementation: dartsass
 
 outputFormats:
   SearchIndex:
@@ -39,6 +37,7 @@ params:
   author:
     name: "Bhargav Lad"
     url: "https://ladb.dev"
+  colorScheme: "light"
   contact: "ladbhargav97@gmail.com"
   description: "Notes, TILs, and write-ups on software, tools, and systems — Bhargav Lad's digital garden."
   dateformat: "2006-01-02"
@@ -62,8 +61,8 @@ params:
 languages:
   en:
     weight: 1
-    languageName: "English"
-    languageCode: "en-GB"
+    label: "English"
+    locale: "en-GB"
     contentDir: content/en
     menu:
       main:

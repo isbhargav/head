@@ -1,7 +1,7 @@
 module github.com/frjo/byte-garden
 
-go 1.24
+go 1.26.3
 
-toolchain go1.24.1
-
-require github.com/frjo/hugo-theme-zen/v5 v5.6.0 // indirect
+require (
+	github.com/frjo/hugo-theme-zen/v7 v7.0.1 // indirect
+)

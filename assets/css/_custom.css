@@ -1,0 +1,117 @@
+/* Site custom styles and colours. This file loads last. */
+
+/* Override font variables to use monospace for body text. */
+:root {
+  --font: '-apple-system', 'BlinkMacSystemFont', 'Inter', 'IBM Plex Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: 'ui-monospace', 'SFMono-Regular', "Cascadia Code", "IBM Plex Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --ff-body: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Paper-like color scheme.
+   The site is locked to light mode via the "colorScheme" param. */
+:root {
+  /* Warm, off-white backgrounds reminiscent of paper. */
+  --color-body-bg: oklch(96% 0.008 50); /* Warm page backdrop (was --color-backdrop in theme v5). */
+  --color-page-bg: oklch(98% 0.005 45); /* Warm off-white for main content (was --color-body-bg in theme v5). */
+  --color-header-bg: oklch(97% 0.006 48); /* Warm header background. */
+  --color-footer-bg: oklch(97% 0.006 48); /* Warm footer background. */
+  --color-text-bg: oklch(99% 0.002 40); /* Very light warm background for text areas. */
+
+  /* Subtle paper texture effect. */
+  --paper-texture: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+
+  /* Content width (ported from theme v5 assets/sass/_extra.scss). */
+  --max-content-width: 1000px;
+  --max-page-width: 1400px;
+
+  /* Improve zebra table contrast. */
+  --color-row-odd: oklch(94% 0.01 45);
+}
+
+/* Apply paper texture to main content areas. */
+.page,
+.layout__main {
+  background-image: var(--paper-texture);
+  background-size: 150px 150px;
+}
+
+/* ------------------------------------------------------------------
+   Code blocks: polished light panel with language label, copy chip
+   and line numbers.
+   ------------------------------------------------------------------ */
+
+[data-codeblock] {
+  --code-panel-bg: oklch(96.8% 0.007 50);
+  --code-panel-border: oklch(89% 0.008 50);
+
+  & > pre.chroma,
+  & > .highlight > pre.chroma {
+    margin-block: 0 var(--spacing-m);
+    padding: var(--spacing-s) var(--spacing-m);
+    padding-block-start: 2.4rem; /* Room for the language label and copy chip. */
+    border: 1px solid var(--code-panel-border);
+    border-radius: var(--radius-m);
+    background-color: var(--code-panel-bg);
+    background-image: none; /* Flat panel, contrasts with the paper texture. */
+    line-height: 1.55;
+    overflow-x: auto;
+
+    & > code {
+      font-size: var(--fs-s);
+    }
+  }
+
+  /* Language label, top-left. */
+  pre > code[data-lang]::before {
+    content: attr(data-lang);
+    position: absolute;
+    inset-block-start: 0.6rem;
+    inset-inline-start: 1rem;
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-meta);
+    user-select: none;
+  }
+}
+
+/* Copy button as a neat chip, top-right. */
+.codebutton {
+  inset-block-start: 0.5rem;
+  inset-inline-end: 0.5rem;
+  rotate: none;
+  padding: 0.2rem 0.55rem;
+  font-size: var(--fs-m);
+  line-height: 1;
+  color: var(--color-text-meta);
+  background-color: var(--color-page-bg);
+  border: 1px solid var(--code-panel-border);
+  border-radius: var(--radius-s);
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    scale: none;
+    color: var(--color-text);
+    border-color: var(--color-text-meta);
+  }
+}
+
+/* Soften the line numbers against the panel.
+   Chroma runs with inline styles (noClasses), so target the line-number
+   span structurally: the first child of each flex line wrapper. */
+[data-codeblock] pre.chroma > code > span > span:first-child {
+  border-inline-end: 1px solid var(--code-panel-border);
+  color: oklch(72% 0.01 50) !important; /* Override chroma's inline style. */
+}
+
+/* Chroma's JSX lexer mis-marks some comments as Error tokens, which the
+   github style paints white on dark red. Neutralize to comment grey. */
+[data-codeblock] pre.chroma span[style*="background-color:#82071e"] {
+  color: #57606a !important;
+  background-color: transparent !important;
+}

@@ -6,8 +6,10 @@
 - **Serve locally**: `hugo server` (starts dev server at http://localhost:1313)
 - **Clean build**: `rm -rf public/ && hugo`
 
+> Requires Hugo **v0.158.0 or newer** (the Zen v7 theme uses `css.Build`). Hugo is managed via `mise.toml` (aqua backend) — run `mise install` to get the right version.
+
 ## Development Workflow
-- **Update theme**: `hugo mod get -u` (updates Hugo theme dependencies)
+- **Update theme**: `hugo mod get -u` (updates Hugo theme dependencies; theme is the Go module `github.com/frjo/hugo-theme-zen/v7`)
 - **Watch mode**: `hugo server --watch` (auto-rebuild on file changes)
 
 ## Code Style Guidelines
@@ -29,12 +31,12 @@
 - Use Hugo shortcodes for reusable components (e.g., `{{< figure >}}`)
 
 ### Assets
-- SASS files in `assets/sass/` compiled automatically by Hugo
+- Vanilla CSS (with nesting and cascade layers) in `assets/css/` — theme v7 has **no Sass pipeline**; site overrides live in `assets/css/_custom.css` (loaded last by the theme's `styles.css`)
 - JavaScript in `assets/js/` served as-is
 - Static files in `static/` copied to root of built site
 
 ### Naming Conventions
-- Files: kebab-case (e.g., `post-title.md`, `custom-style.scss`)
+- Files: kebab-case (e.g., `post-title.md`, `custom-style.css`)
 - Directories: lowercase (e.g., `blog/`, `notes/`)
 - Hugo variables: camelCase in templates
 - CSS classes: kebab-case (e.g., `main-content`, `sidebar-nav`)

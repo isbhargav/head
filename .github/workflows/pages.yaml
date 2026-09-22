@@ -33,9 +33,6 @@ jobs:
           hugo-version: "latest"
           extended: true
 
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
