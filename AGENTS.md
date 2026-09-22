@@ -29,6 +29,9 @@
 - Content files use `.md` extension
 - Organize by language: `content/en/`, `content/sv/`
 - Use Hugo shortcodes for reusable components (e.g., `{{< figure >}}`)
+- Blog posts always end with a `## References` section listing every external
+  source cited in the post, formatted as
+  `- [Title](url) — Author/Site`; add it to existing posts when editing them
 
 ### Assets
 - Vanilla CSS (with nesting and cascade layers) in `assets/css/` — theme v7 has **no Sass pipeline**; site overrides live in `assets/css/_custom.css` (loaded last by the theme's `styles.css`)

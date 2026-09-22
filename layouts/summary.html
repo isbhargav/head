@@ -1,0 +1,15 @@
+{{/* Site override of the Zen theme's summary view.
+     Prefer the frontmatter description: Hugo's auto .Summary pulls the first
+     ~70 words of content, including in-post headings, which renders as fake
+     post titles in list pages. Falls back to .Summary when no description. */}}
+<article class="list-view{{ with .Section }} list-view--{{ . | urlize }}{{ end }}">
+<header>
+<h2 class="title mt--s{{ if $.Param "submitted" | default false }} mb--xxs{{ end }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+{{ if $.Param "submitted" | default false }}{{ partial "submitted.html" . -}}{{ end }}
+</header>
+{{ with .Description -}}
+<p>{{ . }}</p>
+{{ else -}}
+{{ .Summary }}
+{{ end -}}
+</article>
