@@ -434,3 +434,10 @@ card is collapsed or expanded.
 Composition keeps each component small and each API honest: a component owns
 its structure and styling, while callers own the content. That separation is
 what makes React codebases scale.
+
+## References
+
+- [Composition vs Inheritance](https://legacy.reactjs.org/docs/composition-vs-inheritance.html) — React docs (legacy)
+- [How to Use React Context Effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively) — Kent C. Dodds
+- [How to Optimize Your Context Value](https://kentcdodds.com/blog/how-to-optimize-your-context-value) — Kent C. Dodds
+- [Compound Components and Advanced Composition](https://vercel.com/academy/shadcn-ui/compound-components-and-advanced-composition) — Vercel

@@ -346,3 +346,10 @@ doesn't change at all.
 - It's not "more than N `useState`s → switch." Mix both primitives in one
   component, separated by domain; start with `useState` and graduate to
   `useReducer` when you notice state changing together.
+
+## References
+
+- [Should I useState or useReducer?](https://kentcdodds.com/blog/should-i-usestate-or-usereducer) — Kent C. Dodds
+- [useState vs useReducer](https://tkdodo.eu/blog/use-state-vs-use-reducer) — TkDodo (Dominik Dorfmeister)
+- [Why Use useReducer?](https://kyleshevlin.com/why-use-use-reducer/) — Kyle Shevlin
+- [Redux Style Guide: Model Actions as Events, Not Setters](https://redux.js.org/style-guide/style-guide#model-actions-as-events-not-setters) — Redux docs

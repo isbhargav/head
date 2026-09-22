@@ -266,3 +266,8 @@ single toast, and nothing ever fails silently.
 - Combine them: error boundaries for initial loads, toasts for background
   refetches, retries for transient failures — and let React Query own the
   error lifecycle throughout.
+
+## References
+
+- [React Query Error Handling](https://tkdodo.eu/blog/react-query-error-handling) — TkDodo (Dominik Dorfmeister)
+- [Proper Error Handling in React Query](https://tigerabrodi.blog/proper-error-handling-in-react-query) — Tiger Abrodi
